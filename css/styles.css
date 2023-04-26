@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid; 
+    height: 100%;
+    width: 100%;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". tituloinicio tituloinicio tituloinicio ."
+    "breveautorimg breveautortxt breveautortxt breveautortxt ."
+    ". . . . ."
+    ". breveilustxt breveilustxt breveilustxt breveilusimg"; 
+}
+.bgimageinicio{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/imginicio.jpg);
+    display: block;
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.breveilusimg { 
+    grid-area: breveilusimg;
+    background-image: url(../assets/imggaleria.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+.breveilustxt {
+    grid-area: breveilustxt; 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    text-align: center;
+    color: white;
+    font-size: 25px; 
+    
+}
+.breveautorimg {
+    grid-area: breveautorimg; 
+    background-image: url(../assets/imgfondoautor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    
+}
+.breveautortxt { 
+    grid-area: breveautortxt; 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    text-align: center;
+    color: white;
+    font-size: 25px; 
+    
+}
+.tituloinicio { 
+    grid-area: tituloinicio;
+    margin-top: 3%;
+}
+
+
+h1{
+    position:sticky;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+    font-style:normal;
+    font-weight:bolder;
+    font-size: 68px;
+    letter-spacing: 6px;
+    line-height: 86px;
+    color: antiquewhite;
+}
+
+h2{
+    margin-top: 50px;
+    color:bisque;
+    display:block;
+    position:sticky;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+    font-style:normal;
+    font-weight:bold;
+    font-size: 50px;
+    letter-spacing:1px;
+    
+}
+header{
+    text-align: center;
+    background-image: url(../assets/texturamarmol.jpg);
+    background-size: cover;
+    height: 89px;
+    top:0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 5px 10px;
+}
+
+.navbar ul{
+    position: absolute;
+    background-image: url(../assets/texturamarmol.jpg);
+    height: 95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 10px;
+    width: 100%;
+    height: 45px;
+    top: 92px;
+}
+.navbar ul li {
+    display: inline-flex;
+    justify-content:space-evenly;
+    list-style: none;
+    padding: 15px;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 1200;
+    font-size:25px;
+    line-height:12px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.maininicio{
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top:140px;
+    border: 1px solid #000000;
+}
+
+.maingaleria{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imggaleria.jpeg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    filter: blur(1px);
+    border: 1px solid #000000;
+}
+
+.maintienda{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    filter: blur(1px);
+    border: 1px solid #000000;
+    background-position:center;
+}
+.mainacerca{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoautor.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    filter: blur(1px);
+    border: 1px solid #000000;
+}
+.mainproducto{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    filter: blur(1px);
+    border: 1px solid #000000;
+}
+footer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 217, 102, 0.2), rgba(255, 217, 102, 0.2)), linear-gradient(0deg, rgba(255, 242, 204, 0.4), rgba(255, 242, 204, 0.4)), url(../assets/texturamezclado.jpeg);
+    position:fixed;
+    background-size: cover;
+    /*top: 1825px;*/
+    bottom: 0px;
+    width: 100%;
+    height: 75px;
+    background-position: center;
+}
+
+.redes{
+    text-align:center;
+    letter-spacing: 40px;
+    padding: 5px ;
+}
+
+/*.breveautor{
+    background:url(../assets/imgfondoautor.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    display: block;
+}
+
+.txtbreveautor{
+    display:inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 800px;
+}
+
+.breveilus{
+    background:url(../assets/imggaleria.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-top: 575px;
+    margin-left: 1040px;
+    width: 1500px;
+    height: 500px;
+    position:absolute;
+    display:block;
+    
+}
+
+.txtbreveilus{
+    display:inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-position: left;
+    width:46.70%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px; 
+}*/
+
+.clickproducto{
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 300px;
+    font-size: 40px ;
+    color: antiquewhite;
+}
+
+.productotitulo{
+    font-size: 50px;
+}
+
+.vistaproducto{
+    background:url(../assets/libro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    display: block;
+}
+
+.txtvistaproducto{
+    display:inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 350px;
+
+}
+
+.divautor{
+    background:url(../assets/imgautor.jpeg);
+    border-image: url(../assets/texturasogas.jpg);
+    border: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+    margin-left: 950px;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    display: block;
+    border-image: url(../assets/texturasogas.jpg) 20 / 20px round;
+
+}
+
+.txtdivautor{
+    display:inline-block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 325px;
+}
