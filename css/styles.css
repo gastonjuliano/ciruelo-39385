@@ -3,6 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+.containertienda {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.2fr; 
+    grid-template-rows: 0.4fr 1.7fr 1.7fr 0.2fr; 
+    gap: 2% 20px; 
+    grid-template-areas: 
+    ". . titulogaleria titulogaleria . ."
+    ". cajagaleria1 cajagaleria2 cajagaleria3 cajagaleria4 ."
+    ". cajagaleria5 cajagaleria6 cajagaleria7 cajagaleria8 ."
+    ". . . . . ."; 
+}
+.titulotienda { grid-area: titulogaleria; }
+.cajastienda {
+    
+}
+.cajatienda1 { grid-area: cajagaleria1; }
+.cajatienda2 { grid-area: cajagaleria2; }
+.cajatienda3 { grid-area: cajagaleria3; }
+.cajatienda4 { grid-area: cajagaleria4; }
+.cajatienda5 { grid-area: cajagaleria5; }
+.cajatienda6 { grid-area: cajagaleria6; }
+.cajatienda7 { grid-area: cajagaleria7; }
+.cajatienda8 { grid-area: cajagaleria8; }
 
 .container {
     display: grid; 
@@ -206,53 +230,6 @@ footer{
     letter-spacing: 40px;
     padding: 5px ;
 }
-
-/*.breveautor{
-    background:url(../assets/imgfondoautor.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    width: 1000px;
-    height: 500px;
-    position: absolute;
-    display: block;
-}
-
-.txtbreveautor{
-    display:inline-block;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    margin-left: 800px;
-}
-
-.breveilus{
-    background:url(../assets/imggaleria.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    margin-top: 575px;
-    margin-left: 1040px;
-    width: 1500px;
-    height: 500px;
-    position:absolute;
-    display:block;
-    
-}
-
-.txtbreveilus{
-    display:inline-block;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    background-position: left;
-    width:46.70%;
-    height: 100%;
-    text-align: center;
-    color: white;
-    font-size: 25px; 
-}*/
 
 .clickproducto{
     display: inline-block;
