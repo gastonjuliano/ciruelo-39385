@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
 .grid-tienda {
     display: grid; 
     height: 100%;
@@ -17,10 +21,45 @@
     ". cajatienda5 cajatienda6 cajatienda7 cajatienda8 ."
     ". . . . . ."; 
 }
-.titulotienda { grid-area: titulotienda;}
+.titulotienda { 
+    grid-area: titulotienda;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
 
 .cajatienda1 {
     grid-area: cajatienda1;
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.imgcajatienda1{
+    background-image: url(../assets/imggaleria.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width:50%;
+}
+.txtcajatienda1{
+    display:flex;
+    color: antiquewhite;
+    justify-content: center;
+    width: 50%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    align-items: center;
+}
+.txtcajatienda1 p{
+    text-align: center;
+    padding:5%;
+    font-size: 20px;
+}
+
+.botoncompra1{
+    display: inline-flex;
+    border: 2px solid;
+    color: antiquewhite;
 }
 
 .cajatienda2 { 
@@ -70,12 +109,6 @@
     background-repeat: no-repeat;
 }
 
-.imgcajatienda1{
-    display: block;
-    background-image: url(../assets/imggaleria.jpeg);
-    width: 500px;
-    height: auto;
-}
 
 .grid-index {
     display: grid; 
@@ -288,26 +321,29 @@ footer{
 }
 
 .vistaproducto{
-    background:url(../assets/libro.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 150px;
-    margin-left: 300px;
-    width: 1000px;
-    height: 500px;
-    position: absolute;
-    display: block;
+    display:flex;
+    flex-flow: column wrap;
+    height: 65%;
+    width:75%;
+    margin-left: 12.5%;
+    
 }
-
+.imgproducto{
+    display: flex;
+    background:url(../assets/libro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+}
 .txtvistaproducto{
-    display:inline-block;
+    display:flex;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    width: 100%;
-    height: 100%;
+    width: 50%;
     text-align: center;
     color: white;
     font-size: 25px;
-    margin-left: 350px;
+    align-items: center;
+    justify-content: center;
 
 }
 

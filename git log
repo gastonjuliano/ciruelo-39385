@@ -1,0 +1,17 @@
+[33mcommit 28cd8ae30308eaaacaa202bd6a3a9cc2a2ce22ce[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: pedro gaston juliano <gaston.juliano@hotmail.com>
+Date:   Mon May 1 21:20:29 2023 -0300
+
+    hice grids en tienda y no esta funcionando algo
+
+[33mcommit 0c6fd890165ba25d76d1af91f71d62f2e9e82459[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: pedro gaston juliano <gaston.juliano@hotmail.com>
+Date:   Thu Apr 27 18:09:59 2023 -0300
+
+    agregue grid a tienda y borre codigo comentado
+
+[33mcommit 5e3bc4f47c4e879d2c57e57d5c7d18ed9788e884[m
+Author: pedro gaston juliano <gaston.juliano@hotmail.com>
+Date:   Wed Apr 26 17:43:24 2023 -0300
+
+    inicialice git en mi projecto
