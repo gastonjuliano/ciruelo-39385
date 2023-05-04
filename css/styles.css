@@ -137,6 +137,7 @@
 
 .breveilusimg { 
     grid-area: breveilusimg;
+    display:flex;
     background-image: url(../assets/imggaleria.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,6 +146,8 @@
 }
 .breveilustxt {
     grid-area: breveilustxt; 
+    display:flex;
+    flex-flow: column;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     text-align: center;
     color: white;
@@ -153,6 +156,7 @@
 }
 .breveautorimg {
     grid-area: breveautorimg; 
+    display:flex;
     background-image: url(../assets/imgfondoautor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,6 +165,8 @@
 }
 .breveautortxt { 
     grid-area: breveautortxt; 
+    display:flex;
+    flex-flow: column;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     text-align: center;
     color: white;
