@@ -1,0 +1,503 @@
+header { 
+    text-align: center;
+    background-image: url(../assets/texturamarmol.jpg);
+    background-size: cover;
+    height: 89px;
+    top:0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 5px 10px;
+
+	h1 { 
+        position:sticky;
+        text-align: center;
+        font-family: 'Cinzel Decorative';
+        font-style:normal;
+        font-weight:bolder;
+        font-size: 68px;
+        letter-spacing: 6px;
+        line-height: 86px;
+        color: antiquewhite;
+
+		a { 
+            text-decoration: none;
+            color: black;
+		}
+	}
+
+	.navbar { 
+
+		ul { 
+            position: absolute;
+            background-image: url(../assets/texturamarmol.jpg);
+            height: 95px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 5px 10px;
+            width: 100%;
+            height: 45px;
+            top: 92px;
+
+			li { 
+                display: inline-flex;
+                justify-content:space-evenly;
+                list-style: none;
+                padding: 15px;
+                font-family: 'Cinzel Decorative';
+                font-style: normal;
+                font-weight: 1200;
+                font-size:25px;
+                line-height:12px;
+
+				a { 
+                    text-decoration: none;
+                    color: black;
+				}
+			}
+		}
+	}
+}
+
+.maininicio { 
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top:140px;
+    border: 1px solid #000000;
+
+	.bgimageinicio { 
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/imginicio.jpg);
+        display: block;
+        position: absolute;
+        background-repeat:no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+
+		.grid-index {
+            display: grid; 
+            height: 100%;
+            width: 100%;
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+            ". tituloinicio tituloinicio tituloinicio ."
+            "breveautorimg breveautortxt breveautortxt breveautortxt ."
+            ". . . . ."
+            ". breveilustxt breveilustxt breveilustxt breveilusimg";  
+
+			.tituloinicio { 
+                grid-area: tituloinicio;
+                margin-top: 3%;
+
+				h1 {    
+                    position:sticky;
+                    text-align: center;
+                    font-family: 'Cinzel Decorative';
+                    font-style:normal;
+                    font-weight:bolder;
+                    font-size: 68px;
+                    letter-spacing: 6px;
+                    line-height: 86px;
+                    color: antiquewhite; 
+
+				}
+			}
+
+			.breveautorimg { 
+                grid-area: breveautorimg; 
+                display:flex;
+                background-image: url(../assets/imgfondoautor.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom right;
+			}
+
+			.breveautortxt {
+                grid-area: breveautortxt; 
+                display:flex;
+                flex-flow: column;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                text-align: center;
+                color: white;
+                font-size: 25px; 
+
+
+				h2 { 
+                    margin-top: 50px;
+                    color:bisque;
+                    display:block;
+                    position:sticky;
+                    text-align: center;
+                    font-family: 'Cinzel Decorative';
+                    font-style:normal;
+                    font-weight:bold;
+                    font-size: 50px;
+                    letter-spacing:1px;
+
+				}
+
+				p { 
+
+				}
+			}
+
+			.breveilusimg {
+                grid-area: breveilusimg;
+                display:flex;
+                background-image: url(../assets/imggaleria.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+
+			}
+
+			.breveilustxt { 
+                grid-area: breveilustxt; 
+                display:flex;
+                flex-flow: column;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                text-align: center;
+                color: white;
+                font-size: 25px; 
+
+				h2 { 
+                    margin-top: 50px;
+                    color:bisque;
+                    display:block;
+                    position:sticky;
+                    text-align: center;
+                    font-family: 'Cinzel Decorative';
+                    font-style:normal;
+                    font-weight:bold;
+                    font-size: 50px;
+                    letter-spacing:1px;
+
+				}
+
+				p { 
+
+				}
+			}
+		}
+	}
+}
+
+footer { 
+    display: flex;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 217, 102, 0.2), rgba(255, 217, 102, 0.2)), linear-gradient(0deg, rgba(255, 242, 204, 0.4), rgba(255, 242, 204, 0.4)), url(../assets/texturamezclado.jpeg);
+    position:fixed;
+    background-size: cover;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+	.redes { 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        gap:15%;
+        padding: 5px ;
+
+		a { 
+
+			img { 
+
+			}
+		}
+	}
+}
+
+.mainacerca { 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoautor.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+
+	.divautor { 
+        display:inline-block;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        margin-left: 325px;
+
+		.txtdivautor { 
+            background:url(../assets/imgautor.jpeg);
+            border-image: url(../assets/texturasogas.jpg);
+            border: 2px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 250px;
+            margin-left: 950px;
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            display: block;
+            border-image: url(../assets/texturasogas.jpg) 20 / 20px round;
+
+			h2 { 
+
+			}
+
+			p { 
+
+			}
+		}
+	}
+}
+
+.mainproducto { 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    border: 1px solid #000000;
+    min-height: 108vh;
+
+	.productotitulo { 
+        font-size: 50px;
+
+		h2 { 
+
+		}
+	}
+
+	.vistaproducto { 
+        display:flex;
+        flex-flow: row wrap;
+        height: 70vh;
+        width:75%;
+        margin: 0 auto;
+        margin-top: 5%;
+
+		.imgproducto { 
+            display: flex;
+            background:url(../assets/libro.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 100%;
+
+
+		}
+
+		.txtvistaproducto { 
+            display:flex;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            align-items: center;
+            justify-content: center;
+
+			p { 
+
+			}
+		}
+	}
+}
+
+.maintienda { 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    border: 1px solid #000000;
+    background-position:center;
+
+	.grid-tienda { 
+        display: grid; 
+        height: 100%;
+        width: 100%;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.2fr; 
+        grid-template-rows: 0.4fr 1.7fr 1.7fr 0.2fr; 
+        gap: 2% 2%; 
+        grid-template-areas: 
+        ". . titulotienda titulotienda . ."
+        ". cajatienda1 cajatienda2 cajatienda3 cajatienda4 ."
+        ". cajatienda5 cajatienda6 cajatienda7 cajatienda8 ."
+        ". . . . . ."; 
+
+		.titulotienda { 
+            grid-area: titulotienda;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5%;
+
+			h2 { 
+
+			}
+		}
+
+		.cajatienda1 { 
+            grid-area: cajatienda1;
+            display:flex;
+            flex-flow: row;
+            justify-content: space-between;
+
+			.imgcajatienda1 { 
+                background-image: url(../assets/imggaleria.jpeg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                width:50%;
+
+			}
+
+			.txtcajatienda1 {
+                display:flex;
+                color: antiquewhite;
+                justify-content: center;
+                width: 50%;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                align-items: center;
+
+				p { 
+                    text-align: center;
+                    padding:5%;
+                    font-size: 20px;
+				}
+
+				a { 
+
+					.botoncompra1 { 
+                        display: inline-flex;
+                        border: 2px solid;
+                        color: antiquewhite;
+
+					}
+				}
+			}
+		}
+
+		.cajatienda2 { 
+            grid-area: cajatienda2;
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda2 { 
+
+			}
+
+			.txtcajatienda2 { 
+
+			}
+		}
+
+		.cajatienda3 { 
+            grid-area: cajatienda3; 
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda3 { 
+
+			}
+
+			.txtcajatienda3 { 
+
+			}
+		}
+
+		.cajatienda4 { 
+            grid-area: cajatienda4; 
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda4 { 
+
+			}
+
+			.txtcajatienda4 { 
+
+			}
+		}
+
+		.cajatienda5 { 
+            grid-area: cajatienda5; 
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda5 { 
+
+			}
+
+			.txtcajatienda5 { 
+
+			}
+		}
+
+		.cajatienda6 { 
+            grid-area: cajatienda6; 
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda6 { 
+
+			}
+
+			.txtcajatienda6 { 
+
+			}
+		}
+
+		.cajatienda7 { 
+            grid-area: cajatienda7;
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda7 { 
+
+			}
+
+			.txtcajatienda7 { 
+
+			}
+		}
+
+		.cajatienda8 { 
+            grid-area: cajatienda8;
+            background-image: url(../assets/imggaleria.jpeg);
+            background-size: 50%;
+            background-repeat: no-repeat;
+
+			.imgcajatienda8 { 
+
+			}
+
+			.txtcajatienda8 { 
+
+			}
+		}
+	}
+}
