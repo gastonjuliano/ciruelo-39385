@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 header {
   text-align: center;
   background-image: url(../assets/texturamarmol.jpg);
@@ -69,7 +74,10 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
       gap: 0px 0px;
-      grid-template-areas: ". tituloinicio tituloinicio tituloinicio ." "breveautorimg breveautortxt breveautortxt breveautortxt ." ". . . . ." ". breveilustxt breveilustxt breveilustxt breveilusimg"; }
+      grid-template-areas: ". tituloinicio tituloinicio tituloinicio ."
+ "breveautorimg breveautortxt breveautortxt breveautortxt ."
+ ". . . . ."
+ ". breveilustxt breveilustxt breveilustxt breveilusimg"; }
       .maininicio .bgimageinicio .grid-index .tituloinicio {
         grid-area: tituloinicio;
         margin-top: 3%; }
@@ -241,7 +249,10 @@ footer {
     grid-template-columns: 0.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.2fr;
     grid-template-rows: 0.4fr 1.7fr 1.7fr 0.2fr;
     gap: 2% 2%;
-    grid-template-areas: ". . titulotienda titulotienda . ." ". cajatienda1 cajatienda2 cajatienda3 cajatienda4 ." ". cajatienda5 cajatienda6 cajatienda7 cajatienda8 ." ". . . . . ."; }
+    grid-template-areas: ". . titulotienda titulotienda . ."
+ ". cajatienda1 cajatienda2 cajatienda3 cajatienda4 ."
+ ". cajatienda5 cajatienda6 cajatienda7 cajatienda8 ."
+ ". . . . . ."; }
     .maintienda .grid-tienda .titulotienda {
       grid-area: titulotienda;
       align-items: center;
