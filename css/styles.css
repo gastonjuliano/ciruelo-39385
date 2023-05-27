@@ -401,11 +401,11 @@ footer .redes {
 }
 
 @media (max-width:560px){
-  .navbar ul li{
+  header .navbar ul li{
       font-size:  20px;
 
   }
-  h1{
+  header h1{
       font-size: 48px;
   }
   .vistaproducto{
