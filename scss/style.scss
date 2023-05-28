@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header { 
     text-align: center;
     background-image: url(../assets/texturamarmol.jpg);
@@ -78,7 +84,7 @@ header {
         height: 100%;
 
 		.grid-index {
-            display: grid; 
+            display: grid;
             height: 100%;
             width: 100%;
             grid-auto-columns: 1fr; 
@@ -95,17 +101,16 @@ header {
                 grid-area: tituloinicio;
                 margin-top: 3%;
 
-				h1 {    
+				h2 {    
                     position:sticky;
                     text-align: center;
                     font-family: 'Cinzel Decorative';
                     font-style:normal;
                     font-weight:bolder;
-                    font-size: 68px;
-                    letter-spacing: 6px;
-                    line-height: 86px;
+                    font-size: 45px;
+                    letter-spacing: 2px;
+                    line-height: 40px;
                     color: antiquewhite; 
-
 				}
 			}
 
@@ -137,7 +142,7 @@ header {
                     font-family: 'Cinzel Decorative';
                     font-style:normal;
                     font-weight:bold;
-                    font-size: 50px;
+                    font-size: 35px;
                     letter-spacing:1px;
 				}
 			}
@@ -170,7 +175,7 @@ header {
                     font-family: 'Cinzel Decorative';
                     font-style:normal;
                     font-weight:bold;
-                    font-size: 50px;
+                    font-size: 35px;
                     letter-spacing:1px;
 
 				}
@@ -196,8 +201,12 @@ footer {
         justify-content: center;
         align-items: center;
         height:100%;
-        gap:15%;
+        gap:30%;
         padding: 5px ;
+        a img{
+            height: 45px;
+            width: 45px;
+        }
 	}
 }
 
@@ -206,33 +215,52 @@ footer {
     position: absolute;
     background-repeat:no-repeat;
     background-size: cover;
+    background-position:center;
     width: 100%;
     height: 100%;
     top: 137px;
+    border: 1px solid #000000;
+    min-height: 108vh;
 
-	.divautor { 
-        display:inline-block;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-        width: 100%;
-        height: 100%;
+	.acercatitulo { 
+        position:sticky;
         text-align: center;
-        color: white;
-        font-size: 25px;
-        margin-left: 325px;
+        font-family: 'Cinzel Decorative';
+        font-style:normal;
+        font-weight:bolder;
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 86px;
+        color: antiquewhite;
+	}
 
-		.txtdivautor { 
+	.vistaacerca { 
+        display:flex;
+        flex-flow: row wrap;
+        height: 70vh;
+        width:75%;
+        margin: 0 auto;
+        margin-top: 5%;
+
+		.imgautoracerca { 
+            display: flex;
             background:url(../assets/imgautor.jpeg);
-            border-image: url(../assets/texturasogas.jpg);
-            border: 2px;
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
-            margin-top: 250px;
-            margin-left: 950px;
-            width: 300px;
-            height: 500px;
-            position: absolute;
-            display: block;
-            border-image: url(../assets/texturasogas.jpg) 20 / 20px round;
+            width: 50%;
+            height: 100%;
+
+		}
+
+		.txtautoracerca {
+            display:flex;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            align-items: center;
+            justify-content: center; 
 		}
 	}
 }
@@ -250,7 +278,15 @@ footer {
     min-height: 108vh;
 
 	.productotitulo { 
-        font-size: 50px;
+        position:sticky;
+        text-align: center;
+        font-family: 'Cinzel Decorative';
+        font-style:normal;
+        font-weight:bolder;
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 86px;
+        color: antiquewhite; 
 	}
 
 	.vistaproducto { 
@@ -268,8 +304,6 @@ footer {
             background-repeat: no-repeat;
             width: 50%;
             height: 100%;
-
-
 		}
 
 		.txtvistaproducto { 
@@ -315,6 +349,18 @@ footer {
             align-items: center;
             justify-content: center;
             padding-bottom: 5%;
+            h2{
+                margin-top: 20px;
+                position:sticky;
+                text-align: center;
+                font-family: 'Cinzel Decorative';
+                font-style:normal;
+                font-weight:bolder;
+                font-size: 45px;
+                letter-spacing: 2px;
+                line-height: 40px;
+                color: antiquewhite; 
+            }
 		}
 
 		.cajatienda1 { 
@@ -410,6 +456,34 @@ footer {
 	}
 }
 
+.maingaleria { 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imggaleria.jpeg);
+    position: absolute;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    border: 1px solid #000000;
+    background-position:center;
+
+	.titulogaleria { 
+
+		h2 { 
+            margin-top: 20px;
+            position:sticky;
+            text-align: center;
+            font-family: 'Cinzel Decorative';
+            font-style:normal;
+            font-weight:bolder;
+            font-size: 45px;
+            letter-spacing: 2px;
+            line-height: 40px;
+            color: antiquewhite; 
+
+		}
+	}
+}
 
 
 
@@ -420,61 +494,69 @@ footer {
         font-size:  20px;
 
     }
-    h1{
-        font-size: 48px;
+    header h1{
+        font-size: 55px;
     }
-    .vistaproducto{
-        flex-flow: column wrap;
-        width:100%;
-    }
-    .imgproducto{
-        width: 100%;
-        height: 50%;
-    }
-    .txtvistaproducto{
-        width: 100%;
-        height: 50%;
-    }
-    .txtvistaproducto p{
-        padding:20px;
-        font-size: 16px;
+    .mainproducto{
+        .productotitulo{
+            font-size: 30px;
+        }
+        .vistaproducto{
+            flex-flow: column wrap;
+            width:100%;
+            .imgproducto{
+                width: 100%;
+                height: 50%;
+            }
+            .txtvistaproducto{
+                width: 100%;
+                height: 50%;
+                p{
+                    padding:20px;
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
 @media (max-width:480px){
-    .navbar ul li{
+    header .navbar ul li{
         font-size:  16px;
     }
 }
 
 @media (max-width:425px){
-    .vistaproducto{
-        flex-flow: column wrap;
-        width:100%;
+    .mainproducto{
+        .vistaproducto{
+            flex-flow: column wrap;
+            width:100%;
+            .imgproducto{
+                width: 100%;
+                height: 50%;
+            }
+            .txtvistaproducto{
+                width: 100%;
+                height: 50%;
+                p{
+                    padding:20px;
+                    font-size: 13px;
+                }
+            }
+        }
     }
-    .imgproducto{
-        width: 100%;
-        height: 50%;
-    }
-    .txtvistaproducto{
-        width: 100%;
-        height: 50%;
-    }
-    .txtvistaproducto p{
-        padding:20px;
-        font-size: 13px;
-    }
-    .redes a img{
+    footer .redes a img{
+            height: 40px;
+            width: 40px;
+        }
     
-        height: 50px;
-        width: 50px;
-    
-    }
-
 }
 
 @media (max-width:400px){
-    .navbar ul li{
+    .mainproducto .productotitulo{
+        font-size: 20px;
+    }
+    header .navbar ul li{
         font-size:  12px;
     }
     h1{
@@ -483,7 +565,7 @@ footer {
 }
 
 @media (max-width:335px){
-    .navbar ul li{
+    header .navbar ul li{
         font-size:  10px;
     }
     h1{
