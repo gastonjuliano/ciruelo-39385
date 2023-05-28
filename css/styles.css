@@ -74,7 +74,7 @@ header {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
       gap: 0px 0px;
-      grid-template-areas: ". tituloinicio tituloinicio tituloinicio ." "breveautorimg breveautortxt breveautortxt breveautortxt ." ". . . . ." ". breveilustxt breveilustxt breveilustxt breveilusimg"; }
+      grid-template-areas: ". tituloinicio tituloinicio tituloinicio ." "breveautor breveautor breveautor breveautor ." ". . . . ." ". breveilus breveilus breveilus breveilus"; }
       .maininicio .bgimageinicio .grid-index .tituloinicio {
         grid-area: tituloinicio;
         margin-top: 3%; }
@@ -88,22 +88,26 @@ header {
           letter-spacing: 2px;
           line-height: 40px;
           color: antiquewhite; }
-      .maininicio .bgimageinicio .grid-index .breveautorimg {
-        grid-area: breveautorimg;
-        display: flex;
-        background-image: url(../assets/imgfondoautor.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom right; }
-      .maininicio .bgimageinicio .grid-index .breveautortxt {
-        grid-area: breveautortxt;
-        display: flex;
-        flex-flow: column;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-        text-align: center;
-        color: white;
-        font-size: 25px; }
-        .maininicio .bgimageinicio .grid-index .breveautortxt h2 {
+      .maininicio .bgimageinicio .grid-index .breveautor {
+        grid-area: breveautor; }
+        .maininicio .bgimageinicio .grid-index .breveautor .breveautorimg {
+          width: 25%;
+          display: flex;
+          background-image: url(../assets/imgfondoautor.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: bottom right; }
+        .maininicio .bgimageinicio .grid-index .breveautor .breveautortxt {
+          width: 75%;
+          display: flex;
+          flex-flow: column;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+          text-align: center;
+          color: white;
+          font-size: 25px;
+          justify-content: right;
+          align-self: right; }
+        .maininicio .bgimageinicio .grid-index .breveautor h2 {
           margin-top: 50px;
           color: bisque;
           display: block;
@@ -114,32 +118,33 @@ header {
           font-weight: bold;
           font-size: 35px;
           letter-spacing: 1px; }
-      .maininicio .bgimageinicio .grid-index .breveilusimg {
-        grid-area: breveilusimg;
-        display: flex;
-        background-image: url(../assets/imggaleria.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top; }
-      .maininicio .bgimageinicio .grid-index .breveilustxt {
-        grid-area: breveilustxt;
-        display: flex;
-        flex-flow: column;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-        text-align: center;
-        color: white;
-        font-size: 25px; }
-        .maininicio .bgimageinicio .grid-index .breveilustxt h2 {
-          margin-top: 50px;
-          color: bisque;
-          display: block;
-          position: sticky;
+      .maininicio .bgimageinicio .grid-index .breveilus {
+        grid-area: breveilus; }
+        .maininicio .bgimageinicio .grid-index .breveilus .breveilusimg {
+          display: flex;
+          background-image: url(../assets/imggaleria.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top; }
+        .maininicio .bgimageinicio .grid-index .breveilus .breveilustxt {
+          width: 75%;
+          display: flex;
+          flex-flow: column;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
           text-align: center;
-          font-family: 'Cinzel Decorative';
-          font-style: normal;
-          font-weight: bold;
-          font-size: 35px;
-          letter-spacing: 1px; }
+          color: white;
+          font-size: 25px; }
+          .maininicio .bgimageinicio .grid-index .breveilus .breveilustxt h2 {
+            margin-top: 50px;
+            color: bisque;
+            display: block;
+            position: sticky;
+            text-align: center;
+            font-family: 'Cinzel Decorative';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 35px;
+            letter-spacing: 1px; }
 
 footer {
   display: flex;
@@ -180,7 +185,7 @@ footer {
     font-family: 'Cinzel Decorative';
     font-style: normal;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 2px;
     line-height: 86px;
     color: antiquewhite; }
