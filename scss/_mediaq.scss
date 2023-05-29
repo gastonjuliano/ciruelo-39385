@@ -1,0 +1,169 @@
+@media (max-width:1024px) {
+    .maingaleria .muestragaleria {
+        width: 75%;
+        height: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 3%;
+
+        .imggaleria1 {
+            width: 90%;
+            height: 30%;
+        }
+
+        .imggaleria2 {
+            width: 90%;
+            height: 30%;
+        }
+
+        .imggaleria3 {
+            width: 90%;
+            height: 30%;
+        }
+    }
+}
+
+@media (max-width:768px){
+.mainacerca .vistaacerca{
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    margin-top: 3%;
+    .imgautoracerca{
+        width: 100%;
+        height: 50%;
+    }
+    .txtautoracerca{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+
+}
+
+@media (max-width:560px) {
+    header .navbar ul li {
+        font-size: 20px;
+
+    }
+
+    header h1 {
+        font-size: 55px;
+    }
+
+    .mainproducto {
+        .productotitulo {
+            font-size: 30px;
+        }
+
+        .vistaproducto {
+            flex-flow: column wrap;
+            width: 100%;
+
+            .imgproducto {
+                width: 100%;
+                height: 50%;
+            }
+
+            .txtvistaproducto {
+                width: 100%;
+                height: 50%;
+
+                p {
+                    padding: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    header .navbar ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:425px) {
+    .maininicio .bgimageinicio .grid-index {
+        .breveautor .breveautortxt {
+            font-size: 14px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .breveilus .breveilustxt {
+            font-size: 14px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .tituloinicio h2 {
+            font-size: 30px;
+        }
+    }
+
+    .mainproducto {
+        .vistaproducto {
+            flex-flow: column wrap;
+            width: 100%;
+
+            .imgproducto {
+                width: 100%;
+                height: 50%;
+            }
+
+            .txtvistaproducto {
+                width: 100%;
+                height: 50%;
+
+                p {
+                    padding: 20px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    footer .redes a img {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .mainproducto .productotitulo {
+        font-size: 20px;
+    }
+
+    header .navbar ul li {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .maininicio .bgimageinicio .grid-index .tituloinicio h2 {
+        font-size: 25px;
+
+    }
+
+}
+
+@media (max-width:335px) {
+    header .navbar ul li {
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+}

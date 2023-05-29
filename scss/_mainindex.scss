@@ -1,0 +1,136 @@
+.maininicio {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 140px;
+    border: 1px solid #000000;
+
+    .bgimageinicio {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/imginicio.jpg);
+        display: block;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+
+        .grid-index {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 100px;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                ". tituloinicio tituloinicio tituloinicio ."
+                "breveautor breveautor breveautor breveautor ."
+                ". . . . ."
+                ". breveilus breveilus breveilus breveilus";
+
+            .tituloinicio {
+                grid-area: tituloinicio;
+                margin-top: 3%;
+
+                h2 {
+                    position: sticky;
+                    text-align: center;
+                    font-family: 'Cinzel Decorative';
+                    font-style: normal;
+                    font-weight: bolder;
+                    font-size: 45px;
+                    letter-spacing: 2px;
+                    line-height: 40px;
+                    color: antiquewhite;
+                }
+            }
+
+            .breveautor {
+                grid-area: breveautor;
+                display: flex;
+                flex-flow: row nowrap;
+
+                .breveautorimg {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: column;
+                    background-image: url(../assets/imgfondoautor.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: bottom right;
+                }
+
+                .breveautortxt {
+                    height: 100%;
+                    width: 75%;
+                    display: flex;
+                    flex-flow: column;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                    text-align: center;
+                    color: white;
+                    font-size: 25px;
+                    justify-content: right;
+                    align-self: right;
+                }
+
+                h2 {
+                    margin-top: 50px;
+                    color: $colortexto;
+                    display: block;
+                    position: sticky;
+                    text-align: center;
+                    font-family: 'Cinzel Decorative';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 35px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .breveilus {
+                grid-area: breveilus;
+                display: flex;
+                flex-flow: row-reverse nowrap;
+
+                .breveilusimg {
+                    height: 100%;
+                    width: 25%;
+                    display: flex;
+                    background-image: url(../assets/imggaleria.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                }
+
+                .breveilustxt {
+                    height: 100%;
+                    width: 75%;
+                    display: flex;
+                    flex-flow: column;
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    text-align: center;
+                    color: white;
+                    font-size: 25px;
+
+                    h2 {
+                        margin-top: 50px;
+                        color: $colortexto;
+                        display: block;
+                        position: sticky;
+                        text-align: center;
+                        font-family: 'Cinzel Decorative';
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 35px;
+                        letter-spacing: 1px;
+
+                    }
+                }
+            }
+        }
+    }
+}

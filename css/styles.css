@@ -3,6 +3,28 @@
   padding: 0;
   box-sizing: border-box; }
 
+footer {
+  display: flex;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 217, 102, 0.2), rgba(255, 217, 102, 0.2)), linear-gradient(0deg, rgba(255, 242, 204, 0.4), rgba(255, 242, 204, 0.4)), url(../assets/texturamezclado.jpeg);
+  position: fixed;
+  background-size: cover;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  background-position: center;
+  justify-content: center;
+  align-items: center; }
+  footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30%;
+    padding: 5px; }
+    footer .redes a img {
+      height: 45px;
+      width: 45px; }
+
 header {
   text-align: center;
   background-image: url(../assets/texturamarmol.jpg);
@@ -49,6 +71,97 @@ header {
       header .navbar ul li a {
         text-decoration: none;
         color: black; }
+
+.mainacerca {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoautor.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 137px;
+  border: 1px solid #000000;
+  min-height: 108vh; }
+  .mainacerca .acercatitulo {
+    position: sticky;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 86px;
+    color: antiquewhite; }
+  .mainacerca .vistaacerca {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 70vh;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5%; }
+    .mainacerca .vistaacerca .imgautoracerca {
+      display: flex;
+      background: url(../assets/imgautor.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+      height: 100%; }
+    .mainacerca .vistaacerca .txtautoracerca {
+      display: flex;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px; }
+
+.maingaleria {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imggaleria.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 137px;
+  border: 1px solid #000000;
+  background-position: center; }
+  .maingaleria .titulogaleria h2 {
+    margin-top: 20px;
+    position: sticky;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: antiquewhite; }
+  .maingaleria .muestragaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    height: 70%;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+    .maingaleria .muestragaleria .imggaleria1, .maingaleria .muestragaleria .imggaleria2, .maingaleria .muestragaleria .imggaleria3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imginicio.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+      height: 90%;
+      background-position: center; }
+    .maingaleria .muestragaleria .imggaleria2 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg); }
+    .maingaleria .muestragaleria .imggaleria3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg); }
 
 .maininicio {
   position: absolute;
@@ -156,74 +269,6 @@ header {
             font-weight: bold;
             font-size: 35px;
             letter-spacing: 1px; }
-
-footer {
-  display: flex;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, rgba(255, 217, 102, 0.2), rgba(255, 217, 102, 0.2)), linear-gradient(0deg, rgba(255, 242, 204, 0.4), rgba(255, 242, 204, 0.4)), url(../assets/texturamezclado.jpeg);
-  position: fixed;
-  background-size: cover;
-  bottom: 0;
-  width: 100%;
-  height: 6%;
-  background-position: center;
-  justify-content: center;
-  align-items: center; }
-  footer .redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    gap: 30%;
-    padding: 5px; }
-    footer .redes a img {
-      height: 45px;
-      width: 45px; }
-
-.mainacerca {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoautor.jpg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  top: 137px;
-  border: 1px solid #000000;
-  min-height: 108vh; }
-  .mainacerca .acercatitulo {
-    position: sticky;
-    text-align: center;
-    font-family: 'Cinzel Decorative';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 35px;
-    letter-spacing: 2px;
-    line-height: 86px;
-    color: antiquewhite; }
-  .mainacerca .vistaacerca {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 70vh;
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 5%; }
-    .mainacerca .vistaacerca .imgautoracerca {
-      display: flex;
-      background: url(../assets/imgautor.jpeg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 50%;
-      height: 100%; }
-    .mainacerca .vistaacerca .txtautoracerca {
-      display: flex;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-      width: 50%;
-      height: 100%;
-      text-align: center;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px; }
 
 .mainproducto {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
@@ -368,60 +413,6 @@ footer {
       background-size: 50%;
       background-repeat: no-repeat; }
 
-.maingaleria {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imggaleria.jpeg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  top: 137px;
-  border: 1px solid #000000;
-  background-position: center; }
-  .maingaleria .titulogaleria h2 {
-    margin-top: 20px;
-    position: sticky;
-    text-align: center;
-    font-family: 'Cinzel Decorative';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 45px;
-    letter-spacing: 2px;
-    line-height: 40px;
-    color: antiquewhite; }
-  .maingaleria .muestragaleria {
-    height: 70%;
-    width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 3%;
-    margin-top: 5%;
-    margin-left: 5%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
-    .maingaleria .muestragaleria .imggaleria1 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imginicio.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 30%;
-      height: 90%;
-      background-position: center; }
-    .maingaleria .muestragaleria .imggaleria2 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 30%;
-      height: 90%;
-      background-position: center; }
-    .maingaleria .muestragaleria .imggaleria3 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 30%;
-      height: 90%;
-      background-position: center; }
-
 @media (max-width: 1024px) {
   .maingaleria .muestragaleria {
     width: 75%;
@@ -429,7 +420,7 @@ footer {
     flex-direction: column;
     margin: 0 auto;
     margin-top: 3%; }
-    .maingaleria .muestragaleria .imggaleria1 {
+    .maingaleria .muestragaleria .imggaleria1, .maingaleria .muestragaleria .imggaleria2, .maingaleria .muestragaleria .imggaleria3 {
       width: 90%;
       height: 30%; }
     .maingaleria .muestragaleria .imggaleria2 {

@@ -1,0 +1,53 @@
+.mainproducto {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 137px;
+    border: 1px solid #000000;
+    min-height: 108vh;
+
+    .productotitulo {
+        position: sticky;
+        text-align: center;
+        font-family: 'Cinzel Decorative';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 86px;
+        color: $colortexto;
+    }
+
+    .vistaproducto {
+        display: flex;
+        flex-flow: row wrap;
+        height: 70vh;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 5%;
+
+        .imgproducto {
+            display: flex;
+            background: url(../assets/libro.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 100%;
+        }
+
+        .txtvistaproducto {
+            display: flex;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
