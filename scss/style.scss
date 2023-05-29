@@ -255,7 +255,7 @@ footer {
 
     .vistaacerca {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         height: 70vh;
         width: 75%;
         margin: 0 auto;
@@ -280,6 +280,7 @@ footer {
             color: white;
             align-items: center;
             justify-content: center;
+            font-size: 30px;
         }
     }
 }
@@ -572,6 +573,26 @@ footer {
             height: 30%;
         }
     }
+}
+
+@media (max-width:768px){
+.mainacerca .vistaacerca{
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    margin-top: 3%;
+    .imgautoracerca{
+        width: 100%;
+        height: 50%;
+    }
+    .txtautoracerca{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+
+
 }
 
 @media (max-width:560px) {
