@@ -61,7 +61,7 @@ header {
   .maininicio .bgimageinicio {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/imginicio.jpg);
     display: block;
-    position: absolute;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -70,6 +70,7 @@ header {
       display: grid;
       height: 100%;
       width: 100%;
+      margin-bottom: 100px;
       grid-auto-columns: 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
@@ -89,15 +90,20 @@ header {
           line-height: 40px;
           color: antiquewhite; }
       .maininicio .bgimageinicio .grid-index .breveautor {
-        grid-area: breveautor; }
+        grid-area: breveautor;
+        display: flex;
+        flex-flow: row nowrap; }
         .maininicio .bgimageinicio .grid-index .breveautor .breveautorimg {
           width: 25%;
+          height: 100%;
           display: flex;
+          flex-flow: column;
           background-image: url(../assets/imgfondoautor.jpg);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: bottom right; }
         .maininicio .bgimageinicio .grid-index .breveautor .breveautortxt {
+          height: 100%;
           width: 75%;
           display: flex;
           flex-flow: column;
@@ -119,14 +125,19 @@ header {
           font-size: 35px;
           letter-spacing: 1px; }
       .maininicio .bgimageinicio .grid-index .breveilus {
-        grid-area: breveilus; }
+        grid-area: breveilus;
+        display: flex;
+        flex-flow: row-reverse nowrap; }
         .maininicio .bgimageinicio .grid-index .breveilus .breveilusimg {
+          height: 100%;
+          width: 25%;
           display: flex;
           background-image: url(../assets/imggaleria.jpeg);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: top; }
         .maininicio .bgimageinicio .grid-index .breveilus .breveilustxt {
+          height: 100%;
           width: 75%;
           display: flex;
           flex-flow: column;
@@ -377,6 +388,55 @@ footer {
     letter-spacing: 2px;
     line-height: 40px;
     color: antiquewhite; }
+  .maingaleria .muestragaleria {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+    .maingaleria .muestragaleria .imggaleria1 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imginicio.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+      height: 90%;
+      background-position: center; }
+    .maingaleria .muestragaleria .imggaleria2 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+      height: 90%;
+      background-position: center; }
+    .maingaleria .muestragaleria .imggaleria3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+      height: 90%;
+      background-position: center; }
+
+@media (max-width: 1024px) {
+  .maingaleria .muestragaleria {
+    width: 75%;
+    height: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 3%; }
+    .maingaleria .muestragaleria .imggaleria1 {
+      width: 90%;
+      height: 30%; }
+    .maingaleria .muestragaleria .imggaleria2 {
+      width: 90%;
+      height: 30%; }
+    .maingaleria .muestragaleria .imggaleria3 {
+      width: 90%;
+      height: 30%; } }
 
 @media (max-width: 560px) {
   header .navbar ul li {
@@ -403,6 +463,16 @@ footer {
     font-size: 16px; } }
 
 @media (max-width: 425px) {
+  .maininicio .bgimageinicio .grid-index .breveautor .breveautortxt {
+    font-size: 14px; }
+    .maininicio .bgimageinicio .grid-index .breveautor .breveautortxt h2 {
+      font-size: 16px; }
+  .maininicio .bgimageinicio .grid-index .breveilus .breveilustxt {
+    font-size: 14px; }
+    .maininicio .bgimageinicio .grid-index .breveilus .breveilustxt h2 {
+      font-size: 16px; }
+  .maininicio .bgimageinicio .grid-index .tituloinicio h2 {
+    font-size: 30px; }
   .mainproducto .vistaproducto {
     flex-flow: column wrap;
     width: 100%; }
@@ -424,11 +494,13 @@ footer {
     font-size: 20px; }
   header .navbar ul li {
     font-size: 12px; }
-  h1 {
-    font-size: 40px; } }
+  header h1 {
+    font-size: 40px; }
+  .maininicio .bgimageinicio .grid-index .tituloinicio h2 {
+    font-size: 25px; } }
 
 @media (max-width: 335px) {
   header .navbar ul li {
     font-size: 10px; }
-  h1 {
+  header h1 {
     font-size: 35px; } }

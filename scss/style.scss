@@ -77,7 +77,7 @@ header {
     .bgimageinicio {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/imginicio.jpg);
         display: block;
-        position: absolute;
+        position: relative;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -87,6 +87,7 @@ header {
             display: grid;
             height: 100%;
             width: 100%;
+            margin-bottom: 100px;
             grid-auto-columns: 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 0.6fr 1.6fr 0.2fr 1.6fr;
@@ -116,9 +117,14 @@ header {
 
             .breveautor {
                 grid-area: breveautor;
+                display: flex;
+                flex-flow: row nowrap;
+
                 .breveautorimg {
                     width: 25%;
+                    height: 100%;
                     display: flex;
+                    flex-flow: column;
                     background-image: url(../assets/imgfondoautor.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -126,6 +132,7 @@ header {
                 }
 
                 .breveautortxt {
+                    height: 100%;
                     width: 75%;
                     display: flex;
                     flex-flow: column;
@@ -136,6 +143,7 @@ header {
                     justify-content: right;
                     align-self: right;
                 }
+
                 h2 {
                     margin-top: 50px;
                     color: bisque;
@@ -152,7 +160,12 @@ header {
 
             .breveilus {
                 grid-area: breveilus;
+                display: flex;
+                flex-flow: row-reverse nowrap;
+
                 .breveilusimg {
+                    height: 100%;
+                    width: 25%;
                     display: flex;
                     background-image: url(../assets/imggaleria.jpeg);
                     background-repeat: no-repeat;
@@ -161,6 +174,7 @@ header {
                 }
 
                 .breveilustxt {
+                    height: 100%;
                     width: 75%;
                     display: flex;
                     flex-flow: column;
@@ -489,11 +503,76 @@ footer {
 
         }
     }
+
+    .muestragaleria {
+
+        height: 70%;
+        width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        margin-top: 5%;
+        margin-left: 5%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+        .imggaleria1 {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imginicio.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30%;
+            height: 90%;
+            background-position: center;
+
+        }
+
+        .imggaleria2 {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30%;
+            height: 90%;
+            background-position: center;
+
+        }
+
+        .imggaleria3 {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 30%;
+            height: 90%;
+            background-position: center;
+
+        }
+    }
 }
 
+@media (max-width:1024px) {
+    .maingaleria .muestragaleria {
+        width: 75%;
+        height: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 3%;
 
+        .imggaleria1 {
+            width: 90%;
+            height: 30%;
+        }
 
+        .imggaleria2 {
+            width: 90%;
+            height: 30%;
+        }
 
+        .imggaleria3 {
+            width: 90%;
+            height: 30%;
+        }
+    }
+}
 
 @media (max-width:560px) {
     header .navbar ul li {
@@ -539,6 +618,28 @@ footer {
 }
 
 @media (max-width:425px) {
+    .maininicio .bgimageinicio .grid-index {
+        .breveautor .breveautortxt {
+            font-size: 14px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .breveilus .breveilustxt {
+            font-size: 14px;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+
+        .tituloinicio h2 {
+            font-size: 30px;
+        }
+    }
+
     .mainproducto {
         .vistaproducto {
             flex-flow: column wrap;
@@ -577,9 +678,15 @@ footer {
         font-size: 12px;
     }
 
-    h1 {
+    header h1 {
         font-size: 40px;
     }
+
+    .maininicio .bgimageinicio .grid-index .tituloinicio h2 {
+        font-size: 25px;
+
+    }
+
 }
 
 @media (max-width:335px) {
@@ -587,7 +694,7 @@ footer {
         font-size: 10px;
     }
 
-    h1 {
+    header h1 {
         font-size: 35px;
     }
 }
