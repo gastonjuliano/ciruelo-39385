@@ -148,7 +148,7 @@ header {
 
                 h2 {
                     margin-top: 50px;
-                    color: bisque;
+                    color: $colortexto;
                     display: block;
                     position: sticky;
                     text-align: center;
@@ -187,7 +187,7 @@ header {
 
                     h2 {
                         margin-top: 50px;
-                        color: bisque;
+                        color: $colortexto;
                         display: block;
                         position: sticky;
                         text-align: center;
@@ -252,7 +252,7 @@ footer {
         font-size: 35px;
         letter-spacing: 2px;
         line-height: 86px;
-        color: antiquewhite;
+        color: $colortexto;
     }
 
     .vistaacerca {
@@ -308,7 +308,7 @@ footer {
         font-size: 40px;
         letter-spacing: 2px;
         line-height: 86px;
-        color: antiquewhite;
+        color: $colortexto;
     }
 
     .vistaproducto {
@@ -382,7 +382,7 @@ footer {
                 font-size: 45px;
                 letter-spacing: 2px;
                 line-height: 40px;
-                color: antiquewhite;
+                color: $colortexto;
             }
         }
 
@@ -421,7 +421,7 @@ footer {
                     .botoncompra1 {
                         display: inline-flex;
                         border: 2px solid;
-                        color: antiquewhite;
+                        color: $colortexto;
 
                     }
                 }
@@ -502,7 +502,7 @@ footer {
             font-size: 45px;
             letter-spacing: 2px;
             line-height: 40px;
-            color: antiquewhite;
+            color: $colortexto;
 
         }
     }
