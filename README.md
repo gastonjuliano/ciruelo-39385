@@ -1,9 +1,17 @@
-Trabajo practico desarrollado durante la cursada del aprendizaje de HTML y CSS en CODERHOUSE, bajo la supervision de mi profesor y tutores siguiendo y respetando las consignas designadas.
+#Projecto final Desarrollo Web Coderhouse
+>Este projecto es una pagina web responsive de el artista e ilustrador Ciruelo quien tiene varios libros y dibujos famosos sobre dragones.
 
-Primer preentrega: consistio en maquetar en FIGMA, HTML y un poco de CSS.
+##Tecnologias utilizadas:
+- HTML
+- CSS
+- SASS
 
-Segunda preentrega: aplicar CSS grid y flexbox, bootstrap y media query. Subir los archivos a github.
+Este Trabajo practico fue desarrollado bajo la supervision de mi profesor y tutores siguiendo y respetando las consignas designadas. (comision 39385)
 
-Tercera preentrega: Terminar los mediaquery de las paginas, implementar SASS, animacion (minimo 1) y el README.md
+**Primer preentrega:** consistio en maquetar en FIGMA, HTML y un poco de CSS.
 
-Trabajo final: Todo full responsive
+**Segunda preentrega:** aplicar CSS grid y flexbox, bootstrap y media query. Subir los archivos a github.
+
+**Tercera preentrega:** Terminar los mediaquery de las paginas, implementar SASS, animacion (minimo 1) y el README.md
+
+**Trabajo final:** Todo full responsive
