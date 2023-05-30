@@ -3,7 +3,11 @@
 @media (max-width:1292px){
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
         font-size: 18px;
-}
+    }
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
+        font-size:  0.8rem;
+        }
+
 }
 
 
@@ -55,7 +59,9 @@
     font-size: 14px;
 }
 
-
+.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
+    font-size:  0.5rem;
+    }
 
 
 }
@@ -98,6 +104,9 @@
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
         font-size: 12px;
 }
+.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
+    font-size:  0.4rem;
+    }
 }
 
 @media (max-width:480px) {
@@ -186,4 +195,7 @@
     header h1 {
         font-size: 35px;
     }
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
+        font-size:  0.3rem;
+        }
 }
