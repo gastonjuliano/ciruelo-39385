@@ -13,15 +13,16 @@
         display: grid;
         height: 100%;
         width: 100%;
-        grid-auto-columns: 1fr;
-        grid-template-columns: 0.2fr 1.4fr 1.4fr 1.4fr 1.4fr 0.2fr;
-        grid-template-rows: 0.4fr 1.7fr 1.7fr 0.2fr;
-        gap: 2% 2%;
-        grid-template-areas:
-            ". . titulotienda titulotienda . ."
-            ". cajatienda1 cajatienda2 cajatienda3 cajatienda4 ."
-            ". cajatienda5 cajatienda6 cajatienda7 cajatienda8 ."
-            ". . . . . .";
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.2fr 1.4fr 1.4fr 1.4fr 0.2fr; 
+        grid-template-rows: 0.4fr 1.7fr 1.7fr 0.2fr; 
+        gap: 2% 1%; 
+        grid-template-areas: 
+          ". . titulotienda . ."
+          ". cajatienda1 cajatienda2 cajatienda3 ."
+          ". cajatienda4 cajatienda5 cajatienda6 ."
+          ". . . . ."; 
 
         .titulotienda {
             grid-area: titulotienda;
@@ -66,6 +67,7 @@
                 width: 50%;
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
                 align-items: center;
+                flex-flow: column;
 
                 p {
                     text-align: center;
@@ -86,52 +88,114 @@
         }
 
         .cajatienda2 {
+            @extend .cajatienda1;
             grid-area: cajatienda2;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
+
+            .imgcajatienda2 {
+                background-image: url(../assets/imgfondoautor.jpg);
+                @extend .imgcajatienda1;
+            }
+
+            .txtcajatienda2 {
+                @extend .txtcajatienda1;
+
+                a {
+
+                    .botoncompra1 {
+                        @extend .botoncompra1;
+
+                    }
+                }
+            }
+
         }
 
         .cajatienda3 {
+            @extend .cajatienda1;
             grid-area: cajatienda3;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
+
+            .imgcajatienda3 {
+                background-image: url(../assets/imgfondoproducto.jpg);
+                @extend .imgcajatienda1;
+            }
+
+            .txtcajatienda3 {
+                @extend .txtcajatienda1;
+
+                a {
+
+                    .botoncompra1 {
+                        @extend .botoncompra1;
+
+                    }
+                }
+            }
         }
 
         .cajatienda4 {
+            @extend .cajatienda1;
             grid-area: cajatienda4;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
+
+            .imgcajatienda4 {
+                background-image: url(../assets/imginicio.jpg);
+                @extend .imgcajatienda1;
+            }
+
+            .txtcajatienda4 {
+                @extend .txtcajatienda1;
+
+                a {
+
+                    .botoncompra1 {
+                        @extend .botoncompra1;
+
+                    }
+                }
+            }
         }
 
         .cajatienda5 {
+            @extend .cajatienda1;
             grid-area: cajatienda5;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
+
+            .imgcajatienda5 {
+                background-image: url(../assets/imgtienda.jpg);
+                @extend .imgcajatienda1;
+            }
+
+            .txtcajatienda5 {
+                @extend .txtcajatienda1;
+
+                a {
+
+                    .botoncompra1 {
+                        @extend .botoncompra1;
+
+                    }
+                }
+            }
         }
 
         .cajatienda6 {
+            @extend .cajatienda1;
             grid-area: cajatienda6;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
-        }
 
-        .cajatienda7 {
-            grid-area: cajatienda7;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
-        }
+            .imgcajatienda6 {
+                background-image: url(../assets/imggaleria.jpeg);
+                @extend .imgcajatienda1;
+            }
 
-        .cajatienda8 {
-            grid-area: cajatienda8;
-            background-image: url(../assets/imggaleria.jpeg);
-            background-size: 50%;
-            background-repeat: no-repeat;
+            .txtcajatienda6 {
+                @extend .txtcajatienda1;
+
+                a {
+
+                    .botoncompra1 {
+                        @extend .botoncompra1;
+
+                    }
+                }
+            }
         }
     }
 }
