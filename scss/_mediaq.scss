@@ -1,12 +1,11 @@
-
-
-@media (max-width:1292px){
+@media (max-width:1292px) {
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
         font-size: 18px;
     }
-    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
-        font-size:  0.8rem;
-        }
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
+        font-size: 0.8rem;
+    }
 
 }
 
@@ -35,61 +34,66 @@
         }
     }
 
-.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
-                font-size: 16px;
-}
-.maintienda .grid-tienda .titulotienda h2{
-                font-size: 30px;
-}
-.maininicio .bgimageinicio .grid-index{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.1fr 4.6fr 0.1fr; 
-    grid-template-rows: 0.3fr 1.8fr 1.8fr 0.1fr; 
-    gap: 2% 1%; 
-    grid-template-areas: 
-    ". tituloinicio ."
-    ". breveautor ."
-    ". breveilus ."
-    ". . ."; 
-}
-}
-
-@media (max-width:768px){
-.mainacerca .vistaacerca{
-    flex-flow: column nowrap;
-    margin: 0 auto;
-    margin-top: 3%;
-    .imgautoracerca{
-        width: 100%;
-        height: 50%;
-    }
-    .txtautoracerca{
-        width: 100%;
-        height: 50%;
-    }
-}
-.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
-    font-size: 12px;
-}
-
-.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
-    font-size:  0.5rem;
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
+        font-size: 16px;
     }
 
-.maintienda .grid-tienda{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.1fr 1.5fr 1.5fr 0.1fr; 
-    grid-template-rows: 0.4fr 1.6fr 1.6fr 1.6fr 0.2fr; 
-    gap: 2% 1%; 
-    grid-template-areas: 
-    ". titulotienda titulotienda ."
-    ". cajatienda1 cajatienda2 ."
-    ". cajatienda3 cajatienda4 ."
-    ". cajatienda5 cajatienda6 ."
-    ". . . ."; 
+    .maintienda .grid-tienda .titulotienda h2 {
+        font-size: 30px;
+    }
+
+    .maininicio .bgimageinicio .grid-index {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 4.6fr 0.1fr;
+        grid-template-rows: 0.3fr 1.8fr 1.8fr 0.1fr;
+        gap: 2% 1%;
+        grid-template-areas:
+            ". tituloinicio ."
+            ". breveautor ."
+            ". breveilus ."
+            ". . .";
+    }
 }
+
+@media (max-width:768px) {
+    .mainacerca .vistaacerca {
+        flex-flow: column nowrap;
+        margin: 0 auto;
+        margin-top: 3%;
+
+        .imgautoracerca {
+            width: 100%;
+            height: 50%;
+        }
+
+        .txtautoracerca {
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
+        font-size: 12px;
+    }
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
+        font-size: 0.5rem;
+    }
+
+    .maintienda .grid-tienda {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 1.5fr 1.5fr 0.1fr;
+        grid-template-rows: 0.4fr 1.6fr 1.6fr 1.6fr 0.2fr;
+        gap: 2% 1%;
+        grid-template-areas:
+            ". titulotienda titulotienda ."
+            ". cajatienda1 cajatienda2 ."
+            ". cajatienda3 cajatienda4 ."
+            ". cajatienda5 cajatienda6 ."
+            ". . . .";
+    }
 
 
 }
@@ -129,51 +133,61 @@
             }
         }
     }
-.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
         font-size: 10px;
-}
-.maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
-    font-size:  0.4rem;
     }
-.maintienda .grid-tienda .titulotienda h2{
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
+        font-size: 0.4rem;
+    }
+
+    .maintienda .grid-tienda .titulotienda h2 {
         font-size: 20px;
-}
-
-.maininicio .bgimageinicio .grid-index{
-    .breveautor{
-        flex-flow: column nowrap;
-        .breveautortxt{
-            width:100%;
-            height:50%;
-            font-size: 20px;
-            h2{
-                margin-top: 2%;
-            }
-
-        }
-        .breveautorimg {
-            width:100%;
-            height:50%;
-        }
-    }
-    .breveilus{
-        flex-flow: column nowrap;
-        .breveilustxt{
-            width:100%;
-            height:50%;
-            font-size: 20px;
-            h2{
-                margin-top: 2%;
-            }
-
-        }
-        .breveilusimg {
-            width:100%;
-            height:50%;
-        }
     }
 
-}
+    .maininicio .bgimageinicio .grid-index {
+        .breveautor {
+            flex-flow: column nowrap;
+
+            .breveautortxt {
+                width: 100%;
+                height: 50%;
+                font-size: 20px;
+
+                h2 {
+                    margin-top: 2%;
+                }
+
+            }
+
+            .breveautorimg {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        .breveilus {
+            flex-flow: column nowrap;
+
+            .breveilustxt {
+                width: 100%;
+                height: 50%;
+                font-size: 20px;
+
+                h2 {
+                    margin-top: 2%;
+                }
+
+            }
+
+            .breveilusimg {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+    }
 
 
 }
@@ -263,7 +277,8 @@
     header h1 {
         font-size: 35px;
     }
-    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
-        font-size:  0.3rem;
-        }
+
+    .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
+        font-size: 0.3rem;
+    }
 }

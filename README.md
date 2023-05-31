@@ -12,6 +12,6 @@ Este Trabajo practico fue desarrollado bajo la supervision de mi profesor y tuto
 
 **Segunda preentrega:** aplicar CSS grid y flexbox, bootstrap y media query. Subir los archivos a github.
 
-**Tercera preentrega:** Terminar los mediaquery de las paginas, implementar SASS, animacion (minimo 1) y el README.md
+**Tercera preentrega:** Terminar los mediaquery de las paginas, implementar SASS, animacion (minimo 1), SEO y el README.md
 
-**Trabajo final:** Todo full responsive
+**Trabajo final:** Todo full responsive y subido a internet como sitio web completamente funcional.
