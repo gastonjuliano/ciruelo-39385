@@ -41,6 +41,18 @@
 .maintienda .grid-tienda .titulotienda h2{
                 font-size: 30px;
 }
+.maininicio .bgimageinicio .grid-index{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.1fr 4.6fr 0.1fr; 
+    grid-template-rows: 0.3fr 1.8fr 1.8fr 0.1fr; 
+    gap: 2% 1%; 
+    grid-template-areas: 
+    ". tituloinicio ."
+    ". breveautor ."
+    ". breveilus ."
+    ". . ."; 
+}
 }
 
 @media (max-width:768px){
@@ -64,6 +76,20 @@
 .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1{
     font-size:  0.5rem;
     }
+
+.maintienda .grid-tienda{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.1fr 1.5fr 1.5fr 0.1fr; 
+    grid-template-rows: 0.4fr 1.6fr 1.6fr 1.6fr 0.2fr; 
+    gap: 2% 1%; 
+    grid-template-areas: 
+    ". titulotienda titulotienda ."
+    ". cajatienda1 cajatienda2 ."
+    ". cajatienda3 cajatienda4 ."
+    ". cajatienda5 cajatienda6 ."
+    ". . . ."; 
+}
 
 
 }
@@ -112,6 +138,44 @@
 .maintienda .grid-tienda .titulotienda h2{
         font-size: 20px;
 }
+
+.maininicio .bgimageinicio .grid-index{
+    .breveautor{
+        flex-flow: column nowrap;
+        .breveautortxt{
+            width:100%;
+            height:50%;
+            font-size: 20px;
+            h2{
+                margin-top: 2%;
+            }
+
+        }
+        .breveautorimg {
+            width:100%;
+            height:50%;
+        }
+    }
+    .breveilus{
+        flex-flow: column nowrap;
+        .breveilustxt{
+            width:100%;
+            height:50%;
+            font-size: 20px;
+            h2{
+                margin-top: 2%;
+            }
+
+        }
+        .breveilusimg {
+            width:100%;
+            height:50%;
+        }
+    }
+
+}
+
+
 }
 
 @media (max-width:480px) {
