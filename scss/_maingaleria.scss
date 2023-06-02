@@ -42,19 +42,19 @@
             width: 30%;
             height: 90%;
             background-position: center;
-            justify-content: center;
-            align-content: center;
 
         }
 
         .imggaleria2 {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgfondoproducto.jpg);
             @extend .imggaleria1;
+            background-position: right;
         }
 
         .imggaleria3 {
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/imgtienda.jpg);
             @extend .imggaleria1;
+            background-position:center;
 
         }
     }
