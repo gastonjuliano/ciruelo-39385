@@ -9,7 +9,6 @@
     top: 137px;
     border: 1px solid #000000;
     min-height: 108vh;
-
     .acercatitulo {
         position: sticky;
         text-align: center;
@@ -22,34 +21,121 @@
         color: $colortexto;
     }
 
-    .vistaacerca {
+    .contenedorautor {
         display: flex;
-        flex-flow: row nowrap;
-        height: 70vh;
-        width: 75%;
-        margin: 0 auto;
-        margin-top: 5%;
-
-        .imgautoracerca {
+        flex-flow: row;
+        justify-content: center;
+        align-content: center;
+        .vistaacerca {
             display: flex;
-            background: url(../assets/imgautor.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 50%;
-            height: 100%;
+            flex-flow: row nowrap;
+            height: 60vh;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 5%;
 
+            .imgautoracerca {
+                display: flex;
+                background: url(../assets/imgautor.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 50%;
+                height: 100%;
+
+            }
+
+            .txtautoracerca {
+                display: flex;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                width: 50%;
+                height: 100%;
+                text-align: center;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+            }
         }
 
-        .txtautoracerca {
-            display: flex;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-            width: 50%;
-            height: 100%;
+        .form1 {
+            font: 95% Arial, Helvetica, sans-serif;
+            height: 60vh;
+            margin-top: 5%;
+            padding: 16px;
+            background: rgb(255, 250, 244);
+            
+        }
+
+        .form1 h2 {
+            background: $colortexto;
+            padding: 20px 0;
+            font-size: 140%;
+            font-weight: 300;
             text-align: center;
-            color: white;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
+            color: black;
+            margin: -16px -16px 16px -16px;
+        }
+
+        .form1 input[type="text"],
+        .form1 input[type="date"],
+        .form1 input[type="datetime"],
+        .form1 input[type="email"],
+        .form1 input[type="number"],
+        .form1 input[type="search"],
+        .form1 input[type="time"],
+        .form1 input[type="url"],
+        .form1 textarea,
+        .form1 select {
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+            outline: none;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 100%;
+            background: #fff;
+            margin-bottom: 4%;
+            border: 1px solid #ccc;
+            padding: 3%;
+            color: #555;
+            font: 95% Arial, Helvetica, sans-serif;
+        }
+
+        .form1 input[type="text"]:focus,
+        .form1 input[type="date"]:focus,
+        .form1 input[type="datetime"]:focus,
+        .form1 input[type="email"]:focus,
+        .form1 input[type="number"]:focus,
+        .form1 input[type="search"]:focus,
+        .form1 input[type="time"]:focus,
+        .form1 input[type="url"]:focus,
+        .form1 textarea:focus,
+        .form1 select:focus {
+            box-shadow: 0 0 5px rgba(255, 145, 0, 0.514);
+            padding: 3%;
+            border: 1px solid $colortexto;
+        }
+
+        .form1 input[type="submit"],
+        .form1 input[type="button"] {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            width: 100%;
+            padding: 3%;
+            background: $colortexto;
+            border-bottom: 2px solid rgba(255, 145, 0, 0.514);
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+            color: black;
+        }
+
+        .form1 input[type="submit"]:hover,
+        .form1 input[type="button"]:hover {
+            background:rgba(255, 145, 0, 0.514) ;
         }
     }
 }

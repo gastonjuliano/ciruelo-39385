@@ -12,7 +12,7 @@
 
 @media (max-width:1024px) {
     .maingaleria .muestragaleria {
-        width: 75%;
+        width: 85%;
         height: 90%;
         flex-direction: column;
         margin: 0 auto;
@@ -54,10 +54,21 @@
             ". breveilus ."
             ". . .";
     }
+
+    .mainacerca .contenedorautor {
+        flex-flow: column nowrap;
+    }
+
+    .mainacerca .contenedorautor .vistaacerca .txtautoracerca {
+        font-size: 25px;
+    }
+    .mainacerca .acercatitulo{
+        font-size: 30px;
+    }
 }
 
 @media (max-width:768px) {
-    .mainacerca .vistaacerca {
+    .mainacerca .contenedorautor .vistaacerca {
         flex-flow: column nowrap;
         margin: 0 auto;
         margin-top: 3%;
@@ -73,8 +84,12 @@
         }
     }
 
+    .maingaleria .titulogaleria h2 {
+        font-size: 30px;
+    }
+
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
@@ -95,6 +110,9 @@
             ". . . .";
     }
 
+    .mainproducto .vistaproducto .txtvistaproducto {
+        font-size: 25px;
+    }
 
 }
 
@@ -133,9 +151,12 @@
             }
         }
     }
+    .mainacerca .acercatitulo{
+        font-size: 25px;
+    }
 
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .maintienda .grid-tienda .cajatienda1 .txtcajatienda1 a .botoncompra1 {
@@ -143,7 +164,7 @@
     }
 
     .maintienda .grid-tienda .titulotienda h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .maininicio .bgimageinicio .grid-index {
@@ -189,6 +210,9 @@
 
     }
 
+    .mainacerca .contenedorautor .vistaacerca .txtautoracerca {
+        font-size: 20px;
+    }
 
 }
 
@@ -196,23 +220,27 @@
     header .navbar ul li {
         font-size: 16px;
     }
+
+    .mainproducto .vistaproducto .txtvistaproducto {
+        font-size: 20px;
+    }
 }
 
 @media (max-width:425px) {
     .maininicio .bgimageinicio .grid-index {
         .breveautor .breveautortxt {
-            font-size: 14px;
+            font-size: 16px;
 
             h2 {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
 
         .breveilus .breveilustxt {
-            font-size: 14px;
+            font-size: 16px;
 
             h2 {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
 
